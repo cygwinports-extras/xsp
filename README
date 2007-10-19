@@ -5,7 +5,7 @@ System.Web classes for running what is commonly known as ASP.NET.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  mono-1.-1
+  mono-1.2.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -13,10 +13,9 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.5-1
+  cygport-0.3.6-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -30,15 +29,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xsp-1.2.4-X-src.tar.bz2
+  unpack xsp-1.2.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xsp-1.2.4-X.cygport all
+  cygport ./xsp-1.2.5-X.cygport all
 
 This will create:
-  /usr/src/xsp-1.2.4-X-src.tar.bz2
-  /usr/src/xsp-1.2.4-X.tar.bz2
+  /usr/src/xsp-1.2.5-X-src.tar.bz2
+  /usr/src/xsp-1.2.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -62,14 +61,14 @@ Files included in the binary package:
   /usr/lib/mono/gac/Mono.WebServer/0.1.0.0__0738eb9f132ed756/Mono.WebServer.dll.mdb
   /usr/lib/mono/gac/Mono.WebServer2/0.2.0.0__0738eb9f132ed756/Mono.WebServer2.dll
   /usr/lib/mono/gac/Mono.WebServer2/0.2.0.0__0738eb9f132ed756/Mono.WebServer2.dll.mdb
-  /usr/lib/mono/gac/mod-mono-server/1.2.4.0__0738eb9f132ed756/mod-mono-server.exe
-  /usr/lib/mono/gac/mod-mono-server/1.2.4.0__0738eb9f132ed756/mod-mono-server.exe.mdb
-  /usr/lib/mono/gac/mod-mono-server2/1.2.4.0__0738eb9f132ed756/mod-mono-server2.exe
-  /usr/lib/mono/gac/mod-mono-server2/1.2.4.0__0738eb9f132ed756/mod-mono-server2.exe.mdb
-  /usr/lib/mono/gac/xsp/1.2.4.0__0738eb9f132ed756/xsp.exe
-  /usr/lib/mono/gac/xsp/1.2.4.0__0738eb9f132ed756/xsp.exe.mdb
-  /usr/lib/mono/gac/xsp2/1.2.4.0__0738eb9f132ed756/xsp2.exe
-  /usr/lib/mono/gac/xsp2/1.2.4.0__0738eb9f132ed756/xsp2.exe.mdb
+  /usr/lib/mono/gac/mod-mono-server/1.2.5.0__0738eb9f132ed756/mod-mono-server.exe
+  /usr/lib/mono/gac/mod-mono-server/1.2.5.0__0738eb9f132ed756/mod-mono-server.exe.mdb
+  /usr/lib/mono/gac/mod-mono-server2/1.2.5.0__0738eb9f132ed756/mod-mono-server2.exe
+  /usr/lib/mono/gac/mod-mono-server2/1.2.5.0__0738eb9f132ed756/mod-mono-server2.exe.mdb
+  /usr/lib/mono/gac/xsp/1.2.5.0__0738eb9f132ed756/xsp.exe
+  /usr/lib/mono/gac/xsp/1.2.5.0__0738eb9f132ed756/xsp.exe.mdb
+  /usr/lib/mono/gac/xsp2/1.2.5.0__0738eb9f132ed756/xsp2.exe
+  /usr/lib/mono/gac/xsp2/1.2.5.0__0738eb9f132ed756/xsp2.exe.mdb
   /usr/lib/pkgconfig/xsp-2.pc
   /usr/lib/pkgconfig/xsp.pc
   /usr/lib/xsp/1.0/asp-state.exe
@@ -210,13 +209,13 @@ Files included in the binary package:
   /usr/lib/xsp/test/small-icon.png
   /usr/lib/xsp/test/web.config
   /usr/lib/xsp/test/xsp.exe.config
-  /usr/share/doc/Cygwin/xsp-1.2.4.README
-  /usr/share/doc/xsp-1.2.4/AUTHORS
-  /usr/share/doc/xsp-1.2.4/COPYING
-  /usr/share/doc/xsp-1.2.4/ChangeLog
-  /usr/share/doc/xsp-1.2.4/INSTALL
-  /usr/share/doc/xsp-1.2.4/NEWS
-  /usr/share/doc/xsp-1.2.4/README
+  /usr/share/doc/Cygwin/xsp-1.2.5.README
+  /usr/share/doc/xsp-1.2.5/AUTHORS
+  /usr/share/doc/xsp-1.2.5/COPYING
+  /usr/share/doc/xsp-1.2.5/ChangeLog
+  /usr/share/doc/xsp-1.2.5/INSTALL
+  /usr/share/doc/xsp-1.2.5/NEWS
+  /usr/share/doc/xsp-1.2.5/README
   /usr/share/man/man1/asp-state.1.gz
   /usr/share/man/man1/dbsessmgr.1.gz
   /usr/share/man/man1/mod-mono-server.1.gz
@@ -225,6 +224,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.2.5-1 -----
+Version bump.
 
 ----- version 1.2.4-1 -----
 Version bump.
