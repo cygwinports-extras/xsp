@@ -61,21 +61,13 @@ Files included in the binary package:
   /usr/lib/mono/2.0/mod-mono-server2.exe
   /usr/lib/mono/2.0/xsp2.exe
   /usr/lib/mono/gac/Mono.WebServer/0.1.0.0__0738eb9f132ed756/Mono.WebServer.dll
-  /usr/lib/mono/gac/Mono.WebServer/0.1.0.0__0738eb9f132ed756/Mono.WebServer.dll.mdb
   /usr/lib/mono/gac/Mono.WebServer2/0.2.0.0__0738eb9f132ed756/Mono.WebServer2.dll
-  /usr/lib/mono/gac/Mono.WebServer2/0.2.0.0__0738eb9f132ed756/Mono.WebServer2.dll.mdb
   /usr/lib/mono/gac/fastcgi-mono-server/1.9.1.0__0738eb9f132ed756/fastcgi-mono-server.exe
-  /usr/lib/mono/gac/fastcgi-mono-server/1.9.1.0__0738eb9f132ed756/fastcgi-mono-server.exe.mdb
   /usr/lib/mono/gac/fastcgi-mono-server2/1.9.1.0__0738eb9f132ed756/fastcgi-mono-server2.exe
-  /usr/lib/mono/gac/fastcgi-mono-server2/1.9.1.0__0738eb9f132ed756/fastcgi-mono-server2.exe.mdb
   /usr/lib/mono/gac/mod-mono-server/1.9.1.0__0738eb9f132ed756/mod-mono-server.exe
-  /usr/lib/mono/gac/mod-mono-server/1.9.1.0__0738eb9f132ed756/mod-mono-server.exe.mdb
   /usr/lib/mono/gac/mod-mono-server2/1.9.1.0__0738eb9f132ed756/mod-mono-server2.exe
-  /usr/lib/mono/gac/mod-mono-server2/1.9.1.0__0738eb9f132ed756/mod-mono-server2.exe.mdb
   /usr/lib/mono/gac/xsp/1.9.1.0__0738eb9f132ed756/xsp.exe
-  /usr/lib/mono/gac/xsp/1.9.1.0__0738eb9f132ed756/xsp.exe.mdb
   /usr/lib/mono/gac/xsp2/1.9.1.0__0738eb9f132ed756/xsp2.exe
-  /usr/lib/mono/gac/xsp2/1.9.1.0__0738eb9f132ed756/xsp2.exe.mdb
   /usr/lib/pkgconfig/xsp-2.pc
   /usr/lib/pkgconfig/xsp.pc
   /usr/lib/xsp/1.0/asp-state.exe
