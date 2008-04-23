@@ -1,0 +1,3 @@
+inherit mono
+
+DESCRIPTION="Mono ASP.NET server"
