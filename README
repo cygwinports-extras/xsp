@@ -4,7 +4,7 @@ The XSP server is a small web server that hosts the Mono
 System.Web classes for running what is commonly known as ASP.NET.
 
 Runtime requirements:
-  mono-1.9.1-1
+  mono-2.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -28,29 +28,34 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xsp-1.9.1-X-src.tar.bz2
+  unpack xsp-2.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xsp-1.9.1-X.cygport all
+  cygport ./xsp-2.0-X.cygport all
 
 This will create:
-  /usr/src/xsp-1.9.1-X-src.tar.bz2
-  /usr/src/xsp-1.9.1-X.tar.bz2
+  /usr/src/xsp-2.0-X-src.tar.bz2
+  /usr/src/xsp-2.0-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/asp-state
+  /usr/bin/asp-state1
   /usr/bin/asp-state2
   /usr/bin/dbsessmgr
+  /usr/bin/dbsessmgr1
   /usr/bin/dbsessmgr2
   /usr/bin/fastcgi-mono-server
+  /usr/bin/fastcgi-mono-server1
   /usr/bin/fastcgi-mono-server2
   /usr/bin/mod-mono-server
+  /usr/bin/mod-mono-server1
   /usr/bin/mod-mono-server2
   /usr/bin/xsp
+  /usr/bin/xsp1
   /usr/bin/xsp2
   /usr/lib/mono/1.0/Mono.WebServer.dll
   /usr/lib/mono/1.0/fastcgi-mono-server.exe
@@ -62,12 +67,12 @@ Files included in the binary package:
   /usr/lib/mono/2.0/xsp2.exe
   /usr/lib/mono/gac/Mono.WebServer/0.1.0.0__0738eb9f132ed756/Mono.WebServer.dll
   /usr/lib/mono/gac/Mono.WebServer2/0.2.0.0__0738eb9f132ed756/Mono.WebServer2.dll
-  /usr/lib/mono/gac/fastcgi-mono-server/1.9.1.0__0738eb9f132ed756/fastcgi-mono-server.exe
-  /usr/lib/mono/gac/fastcgi-mono-server2/1.9.1.0__0738eb9f132ed756/fastcgi-mono-server2.exe
-  /usr/lib/mono/gac/mod-mono-server/1.9.1.0__0738eb9f132ed756/mod-mono-server.exe
-  /usr/lib/mono/gac/mod-mono-server2/1.9.1.0__0738eb9f132ed756/mod-mono-server2.exe
-  /usr/lib/mono/gac/xsp/1.9.1.0__0738eb9f132ed756/xsp.exe
-  /usr/lib/mono/gac/xsp2/1.9.1.0__0738eb9f132ed756/xsp2.exe
+  /usr/lib/mono/gac/fastcgi-mono-server/2.0.0.0__0738eb9f132ed756/fastcgi-mono-server.exe
+  /usr/lib/mono/gac/fastcgi-mono-server2/2.0.0.0__0738eb9f132ed756/fastcgi-mono-server2.exe
+  /usr/lib/mono/gac/mod-mono-server/2.0.0.0__0738eb9f132ed756/mod-mono-server.exe
+  /usr/lib/mono/gac/mod-mono-server2/2.0.0.0__0738eb9f132ed756/mod-mono-server2.exe
+  /usr/lib/mono/gac/xsp/2.0.0.0__0738eb9f132ed756/xsp.exe
+  /usr/lib/mono/gac/xsp2/2.0.0.0__0738eb9f132ed756/xsp2.exe
   /usr/lib/pkgconfig/xsp-2.pc
   /usr/lib/pkgconfig/xsp.pc
   /usr/lib/xsp/1.0/asp-state.exe
@@ -244,12 +249,12 @@ Files included in the binary package:
   /usr/lib/xsp/unittests/Tests.XSP.Security/Tests.XSP.Security.dll
   /usr/lib/xsp/unittests/Tests.XSP.Security/WebTestHelper.cs
   /usr/lib/xsp/unittests/webroot/index.aspx
-  /usr/share/doc/xsp-1.9.1/AUTHORS
-  /usr/share/doc/xsp-1.9.1/COPYING
-  /usr/share/doc/xsp-1.9.1/ChangeLog
-  /usr/share/doc/xsp-1.9.1/INSTALL
-  /usr/share/doc/xsp-1.9.1/NEWS
-  /usr/share/doc/xsp-1.9.1/README
+  /usr/share/doc/xsp-2.0/AUTHORS
+  /usr/share/doc/xsp-2.0/COPYING
+  /usr/share/doc/xsp-2.0/ChangeLog
+  /usr/share/doc/xsp-2.0/INSTALL
+  /usr/share/doc/xsp-2.0/NEWS
+  /usr/share/doc/xsp-2.0/README
   /usr/share/man/man1/asp-state.1.gz
   /usr/share/man/man1/dbsessmgr.1.gz
   /usr/share/man/man1/fastcgi-mono-server.1.gz
@@ -259,6 +264,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.0-1 -----
+Version bump.
 
 ----- version 1.9.1-1 -----
 Version bump.

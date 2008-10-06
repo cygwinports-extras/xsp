@@ -1,0 +1,11 @@
+--- origsrc/xsp-2.0/configure.in	2008-10-01 16:05:38.000000000 -0500
++++ src/xsp-2.0/configure.in	2008-10-06 10:54:28.149885600 -0500
+@@ -61,7 +61,7 @@
+ fi
+ 
+ case "$host" in
+-	*-*-mingw*|*-*-cygwin*)
++	*-*-mingw*)
+ 	platform_win32=yes	
+ 	;;
+ esac
