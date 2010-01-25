@@ -4,290 +4,44 @@ The XSP server is a small web server that hosts the Mono
 System.Web classes for running what is commonly known as ASP.NET.
 
 Runtime requirements:
-  mono-2.0-1
+  mono-2.4.3.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.25-11
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20060817-1
-  cygport-0.3.9-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  make-3.81-1
-  pkg-config-0.21-1
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
+  binutils-2.19.51-1
+  cygport-0.3.80-1
+  gawk-3.1.7-1
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
   http://www.mono-project.com/
 
 Canonical download:
-  http://go-mono.com/sources-latest/
+  http://ftp.novell.com/pub/mono/sources/xsp/
 
 -------------------------------------------
 
 Build instructions:
-  unpack xsp-2.0-X-src.tar.bz2
+  unpack xsp-2.4.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xsp-2.0-X.cygport all
+  cygport ./xsp-2.4.3-X.cygport all
 
 This will create:
-  /usr/src/xsp-2.0-X-src.tar.bz2
-  /usr/src/xsp-2.0-X.tar.bz2
+  /usr/src/xsp-2.4.3-X-src.tar.bz2
+  /usr/src/xsp-2.4.3-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/asp-state
-  /usr/bin/asp-state1
-  /usr/bin/asp-state2
-  /usr/bin/dbsessmgr
-  /usr/bin/dbsessmgr1
-  /usr/bin/dbsessmgr2
-  /usr/bin/fastcgi-mono-server
-  /usr/bin/fastcgi-mono-server1
-  /usr/bin/fastcgi-mono-server2
-  /usr/bin/mod-mono-server
-  /usr/bin/mod-mono-server1
-  /usr/bin/mod-mono-server2
-  /usr/bin/xsp
-  /usr/bin/xsp1
-  /usr/bin/xsp2
-  /usr/lib/mono/1.0/Mono.WebServer.dll
-  /usr/lib/mono/1.0/fastcgi-mono-server.exe
-  /usr/lib/mono/1.0/mod-mono-server.exe
-  /usr/lib/mono/1.0/xsp.exe
-  /usr/lib/mono/2.0/Mono.WebServer2.dll
-  /usr/lib/mono/2.0/fastcgi-mono-server2.exe
-  /usr/lib/mono/2.0/mod-mono-server2.exe
-  /usr/lib/mono/2.0/xsp2.exe
-  /usr/lib/mono/gac/Mono.WebServer/0.1.0.0__0738eb9f132ed756/Mono.WebServer.dll
-  /usr/lib/mono/gac/Mono.WebServer2/0.2.0.0__0738eb9f132ed756/Mono.WebServer2.dll
-  /usr/lib/mono/gac/fastcgi-mono-server/2.0.0.0__0738eb9f132ed756/fastcgi-mono-server.exe
-  /usr/lib/mono/gac/fastcgi-mono-server2/2.0.0.0__0738eb9f132ed756/fastcgi-mono-server2.exe
-  /usr/lib/mono/gac/mod-mono-server/2.0.0.0__0738eb9f132ed756/mod-mono-server.exe
-  /usr/lib/mono/gac/mod-mono-server2/2.0.0.0__0738eb9f132ed756/mod-mono-server2.exe
-  /usr/lib/mono/gac/xsp/2.0.0.0__0738eb9f132ed756/xsp.exe
-  /usr/lib/mono/gac/xsp2/2.0.0.0__0738eb9f132ed756/xsp2.exe
-  /usr/lib/pkgconfig/xsp-2.pc
-  /usr/lib/pkgconfig/xsp.pc
-  /usr/lib/xsp/1.0/asp-state.exe
-  /usr/lib/xsp/1.0/asp-state.exe.config
-  /usr/lib/xsp/1.0/dbsessmgr.exe
-  /usr/lib/xsp/1.0/dbsessmgr.exe.config
-  /usr/lib/xsp/2.0/asp-state2.exe
-  /usr/lib/xsp/2.0/asp-state2.exe.config
-  /usr/lib/xsp/2.0/dbsessmgr2.exe
-  /usr/lib/xsp/2.0/dbsessmgr2.exe.config
-  /usr/lib/xsp/test/1.1/asp.net/body.inc
-  /usr/lib/xsp/test/1.1/asp.net/browsercaps.aspx
-  /usr/lib/xsp/test/1.1/asp.net/code-render.aspx
-  /usr/lib/xsp/test/1.1/asp.net/codebehind1.aspx
-  /usr/lib/xsp/test/1.1/asp.net/header.inc
-  /usr/lib/xsp/test/1.1/asp.net/includetest.aspx
-  /usr/lib/xsp/test/1.1/asp.net/index.aspx
-  /usr/lib/xsp/test/1.1/asp.net/registertest.aspx
-  /usr/lib/xsp/test/1.1/asp.net/registertest1.ascx
-  /usr/lib/xsp/test/1.1/asp.net/registertest2.ascx
-  /usr/lib/xsp/test/1.1/asp.net/serial.aspx
-  /usr/lib/xsp/test/1.1/asp.net/server-side-object.aspx
-  /usr/lib/xsp/test/1.1/asp.net/session1.aspx
-  /usr/lib/xsp/test/1.1/asp.net/transfer1.aspx
-  /usr/lib/xsp/test/1.1/asp.net/transfer2.aspx
-  /usr/lib/xsp/test/1.1/asp.net/typedesc.aspx
-  /usr/lib/xsp/test/1.1/authtest/index.aspx
-  /usr/lib/xsp/test/1.1/authtest/login.aspx
-  /usr/lib/xsp/test/1.1/authtest/web.config
-  /usr/lib/xsp/test/1.1/customcontrol/index.aspx
-  /usr/lib/xsp/test/1.1/customcontrol/tabcontrol.aspx
-  /usr/lib/xsp/test/1.1/customcontrol/tabcontrol2.aspx
-  /usr/lib/xsp/test/1.1/databind/databind-arraylist.aspx
-  /usr/lib/xsp/test/1.1/databind/databind-attribute.aspx
-  /usr/lib/xsp/test/1.1/databind/databind-class.aspx
-  /usr/lib/xsp/test/1.1/databind/databind-template.aspx
-  /usr/lib/xsp/test/1.1/databind/index.aspx
-  /usr/lib/xsp/test/1.1/handlers/async.ashx
-  /usr/lib/xsp/test/1.1/handlers/chunked.ashx
-  /usr/lib/xsp/test/1.1/handlers/empty.ashx
-  /usr/lib/xsp/test/1.1/handlers/index.aspx
-  /usr/lib/xsp/test/1.1/handlers/monodoc.ashx
-  /usr/lib/xsp/test/1.1/handlers/webhandler.ashx
-  /usr/lib/xsp/test/1.1/html/button.aspx
-  /usr/lib/xsp/test/1.1/html/htmlanchor.aspx
-  /usr/lib/xsp/test/1.1/html/htmlbutton.aspx
-  /usr/lib/xsp/test/1.1/html/htmlgeneric.aspx
-  /usr/lib/xsp/test/1.1/html/htmlimage.aspx
-  /usr/lib/xsp/test/1.1/html/htmlinputbutton.aspx
-  /usr/lib/xsp/test/1.1/html/htmlinputcheckbox.aspx
-  /usr/lib/xsp/test/1.1/html/htmlinputfile.aspx
-  /usr/lib/xsp/test/1.1/html/htmlinputhidden.aspx
-  /usr/lib/xsp/test/1.1/html/htmlinputimage.aspx
-  /usr/lib/xsp/test/1.1/html/htmlinputradiobutton.aspx
-  /usr/lib/xsp/test/1.1/html/htmlinputtext.aspx
-  /usr/lib/xsp/test/1.1/html/htmlselect.aspx
-  /usr/lib/xsp/test/1.1/html/htmltable.aspx
-  /usr/lib/xsp/test/1.1/html/htmltextarea.aspx
-  /usr/lib/xsp/test/1.1/html/index.aspx
-  /usr/lib/xsp/test/1.1/index.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/calendar.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/datalist.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/dbpage1.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/dbpage1.sqlite
-  /usr/lib/xsp/test/1.1/webcontrols/dbpage2.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/dbpage2.sqlite
-  /usr/lib/xsp/test/1.1/webcontrols/dbpage_test_setup.exe
-  /usr/lib/xsp/test/1.1/webcontrols/index.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/listitem.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/people.xml
-  /usr/lib/xsp/test/1.1/webcontrols/peopletable.xsl
-  /usr/lib/xsp/test/1.1/webcontrols/temperature.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/validator1.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_adrotator.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_adrotator.xml
-  /usr/lib/xsp/test/1.1/webcontrols/web_button.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_checkbox.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_checkboxlist.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_comparevalidator.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_datagrid.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_datagrid_command.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_dropdownlist.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_hyperlink.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_image.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_imagebutton.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_label.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_linkbutton.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_listbox.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_literal.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_panel.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_placeholder.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_radiobutton.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_radiobuttonlist.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_regularexpressionvalidator.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_repeater.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_table.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_table2.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_textbox.aspx
-  /usr/lib/xsp/test/1.1/webcontrols/web_xml.aspx
-  /usr/lib/xsp/test/1.1/webservice/CompressExtension.cs
-  /usr/lib/xsp/test/1.1/webservice/ConverterService.asmx
-  /usr/lib/xsp/test/1.1/webservice/ServiceClient.exe.config
-  /usr/lib/xsp/test/1.1/webservice/TestService.asmx
-  /usr/lib/xsp/test/1.1/webservice/index.aspx
-  /usr/lib/xsp/test/2.0/index.aspx
-  /usr/lib/xsp/test/2.0/masterpages/content1.aspx
-  /usr/lib/xsp/test/2.0/masterpages/content2.aspx
-  /usr/lib/xsp/test/2.0/masterpages/frame.master
-  /usr/lib/xsp/test/2.0/masterpages/index.aspx
-  /usr/lib/xsp/test/2.0/masterpages/simple.aspx
-  /usr/lib/xsp/test/2.0/masterpages/simple.master
-  /usr/lib/xsp/test/2.0/menu/index.aspx
-  /usr/lib/xsp/test/2.0/menu/menu1.aspx
-  /usr/lib/xsp/test/2.0/menu/menu2.aspx
-  /usr/lib/xsp/test/2.0/menu/stock_copy_24.png
-  /usr/lib/xsp/test/2.0/menu/stock_cut_24.png
-  /usr/lib/xsp/test/2.0/menu/stock_paste_24.png
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/dash.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/dashminus.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/dashplus.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/i.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/l.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/lminus.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/lplus.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/minus.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/noexpand.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/plus.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/r.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/rminus.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/rplus.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/t.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/tminus.gif
-  /usr/lib/xsp/test/2.0/treeview/TreeLineImages/tplus.gif
-  /usr/lib/xsp/test/2.0/treeview/index.aspx
-  /usr/lib/xsp/test/2.0/treeview/populate-on-demand.aspx
-  /usr/lib/xsp/test/2.0/treeview/populate.cs
-  /usr/lib/xsp/test/2.0/treeview/treeview-databound.aspx
-  /usr/lib/xsp/test/2.0/treeview/treeview.aspx
-  /usr/lib/xsp/test/App_Code/Application.cs
-  /usr/lib/xsp/test/ServiceClient.exe
-  /usr/lib/xsp/test/Web.sitemap
-  /usr/lib/xsp/test/bin/SiteMapReader_1.1.dll
-  /usr/lib/xsp/test/bin/codebehind1.dll
-  /usr/lib/xsp/test/bin/extensions.dll
-  /usr/lib/xsp/test/bin/tabcontrol.dll
-  /usr/lib/xsp/test/bin/tabcontrol2.dll
-  /usr/lib/xsp/test/bin/treeview.dll
-  /usr/lib/xsp/test/bin/typedesc.dll
-  /usr/lib/xsp/test/controls/BreadCrumbs_1.1.ascx
-  /usr/lib/xsp/test/controls/BreadCrumbs_2.0.ascx
-  /usr/lib/xsp/test/controls/FileList.ascx
-  /usr/lib/xsp/test/controls/MonoSamplesHeader.ascx
-  /usr/lib/xsp/test/extensions.dll
-  /usr/lib/xsp/test/favicon.ico
-  /usr/lib/xsp/test/global.asax
-  /usr/lib/xsp/test/index.aspx
-  /usr/lib/xsp/test/index2.aspx
-  /usr/lib/xsp/test/missing_components.aspx
-  /usr/lib/xsp/test/mod-mono-server.exe.config
-  /usr/lib/xsp/test/mono-powered-big.png
-  /usr/lib/xsp/test/mono-xsp.css
-  /usr/lib/xsp/test/mono.png
-  /usr/lib/xsp/test/monobutton.png
-  /usr/lib/xsp/test/sample.webapp
-  /usr/lib/xsp/test/small-icon.png
-  /usr/lib/xsp/test/web.config
-  /usr/lib/xsp/test/xsp.exe.config
-  /usr/lib/xsp/unittests/ChangeLog
-  /usr/lib/xsp/unittests/NOACCESS
-  /usr/lib/xsp/unittests/README
-  /usr/lib/xsp/unittests/Tests.XSP.Security/DirectoryTraversalTest.cs
-  /usr/lib/xsp/unittests/Tests.XSP.Security/FileExtensionsTest.cs
-  /usr/lib/xsp/unittests/Tests.XSP.Security/Makefile
-  /usr/lib/xsp/unittests/Tests.XSP.Security/Tests.XSP.Security.dll
-  /usr/lib/xsp/unittests/Tests.XSP.Security/WebTestHelper.cs
-  /usr/lib/xsp/unittests/webroot/index.aspx
-  /usr/share/doc/xsp-2.0/AUTHORS
-  /usr/share/doc/xsp-2.0/COPYING
-  /usr/share/doc/xsp-2.0/ChangeLog
-  /usr/share/doc/xsp-2.0/INSTALL
-  /usr/share/doc/xsp-2.0/NEWS
-  /usr/share/doc/xsp-2.0/README
-  /usr/share/man/man1/asp-state.1.gz
-  /usr/share/man/man1/dbsessmgr.1.gz
-  /usr/share/man/man1/fastcgi-mono-server.1.gz
-  /usr/share/man/man1/mod-mono-server.1.gz
-  /usr/share/man/man1/xsp.1.gz
-
-------------------
-
 Port Notes:
 
------ version 2.0-1 -----
-Version bump.
-
------ version 1.9.1-1 -----
-Version bump.
-
------ version 1.2.6-1 -----
-Version bump.
-
------ version 1.2.5-1 -----
-Version bump.
-
------ version 1.2.4-1 -----
-Version bump.
-
------ version 1.2.3-1 -----
-Version bump.
-
------ version 1.2.1-1 -----
-Version bump for mono-1.2.
-
------ version 1.1.16.1-1 -----
-Initial release for Cygwin.
+----- version 2.4.3-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
