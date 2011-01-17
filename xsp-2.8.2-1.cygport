@@ -2,6 +2,9 @@ inherit mono
 
 DESCRIPTION="Mono ASP.NET server"
 
-PATCH_URI="2.0-not-mingw.patch"
+PATCH_URI="
+	2.0-not-mingw.patch
+	2.8-docs-vpath.patch
+"
 
 MAKEOPTS+=" -j1"
