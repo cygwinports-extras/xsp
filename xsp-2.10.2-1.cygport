@@ -1,0 +1,11 @@
+inherit mono
+
+DESCRIPTION="Mono ASP.NET server"
+
+PATCH_URI="
+	2.10-not-mingw.patch
+	2.10-docs-vpath.patch
+"
+
+ACLOCAL_FLAGS="-I build/m4/shamrock -I build/m4/shave"
+MAKEOPTS+=" -j1"

@@ -1,0 +1,46 @@
+--- origsrc/xsp-2.10.2/docs/Mono.FastCGI/Makefile.am	2011-04-14 14:39:39.000000000 -0500
++++ src/xsp-2.10.2/docs/Mono.FastCGI/Makefile.am	2011-05-17 17:25:51.779149800 -0500
+@@ -6,9 +6,9 @@ DOCS_SOURCE_20=$(DOCS_ARCHIVE_BASE).sour
+ 
+ MONO_FASTCGI_ASSEMBLY_20=$(top_srcdir)/src/Mono.WebServer.FastCgi/fastcgi-mono-server2.exe
+ 
+-INSTALL_FILES=$(DOCS_ARCHIVE_20) $(DOCS_TREE_20) $(DOCS_SOURCE_20)
++INSTALL_FILES=$(DOCS_ARCHIVE_20) $(DOCS_TREE_20) $(srcdir)/$(DOCS_SOURCE_20)
+ 
+-DOC_FILES=$(shell find en -path '*/.svn' -prune -o -type f -printf "%p ")
++DOC_FILES=$(shell find $(srcdir)/en -path '*/.svn' -prune -o -type f -printf "%p ")
+ 
+ EXTRA_DIST = \
+ 	$(DOCS_SOURCE_20) \
+@@ -20,7 +20,7 @@ all-local: $(DOCS_ARCHIVE_20)
+ 
+ $(DOCS_ARCHIVE_20): $(DOCS_TREE_20)
+ $(DOCS_TREE_20): docs-stamp
+-	$(MDOC) assemble -o Mono.FastCGI en
++	$(MDOC) assemble -o Mono.FastCGI $(srcdir)/en
+ 
+ docs-stamp:
+ 	touch docs-stamp
+--- origsrc/xsp-2.10.2/docs/Mono.WebServer/Makefile.am	2011-04-14 14:39:39.000000000 -0500
++++ src/xsp-2.10.2/docs/Mono.WebServer/Makefile.am	2011-05-17 17:25:57.636484800 -0500
+@@ -6,9 +6,9 @@ DOCS_SOURCE_20=$(DOCS_ARCHIVE_BASE).sour
+ 
+ MONO_WEBSERVER_ASSEMBLY_20=$(top_srcdir)/src/Mono.WebServer/2.0/Mono.WebServer2.dll
+ 
+-INSTALL_FILES=$(DOCS_ARCHIVE_20) $(DOCS_TREE_20) $(DOCS_SOURCE_20)
++INSTALL_FILES=$(DOCS_ARCHIVE_20) $(DOCS_TREE_20) $(srcdir)/$(DOCS_SOURCE_20)
+ 
+-DOC_FILES=$(shell find en -path '*/.svn' -prune -o -type f -printf "%p ")
++DOC_FILES=$(shell find $(srcdir)/en -path '*/.svn' -prune -o -type f -printf "%p ")
+ 
+ EXTRA_DIST = \
+ 	$(DOCS_SOURCE_20) \
+@@ -20,7 +20,7 @@ all-local: $(DOCS_ARCHIVE_20)
+ 
+ $(DOCS_ARCHIVE_20): $(DOCS_TREE_20)
+ $(DOCS_TREE_20): docs-stamp
+-	$(MDOC) assemble -o Mono.WebServer en
++	$(MDOC) assemble -o Mono.WebServer $(srcdir)/en
+ 
+ docs-stamp:
+ 	touch docs-stamp

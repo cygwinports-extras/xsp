@@ -1,0 +1,11 @@
+--- origsrc/xsp-2.10/configure.ac
++++ src/xsp-2.10/configure.ac
+@@ -61,7 +61,7 @@
+ fi
+ 
+ case "$host" in
+-	*-*-mingw*|*-*-cygwin*)
++	*-*-mingw*)
+ 	platform_win32=yes	
+ 	;;
+ esac
